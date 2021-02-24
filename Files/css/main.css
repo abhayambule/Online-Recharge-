@@ -1,0 +1,123 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+.wowlogo:hover{
+	color: red;
+	cursor: pointer;
+}
+nav{
+  margin-bottom: 10px;
+}
+.firstDiv{
+  padding-top: 50px;
+  padding-bottom: 00px;
+}
+/* Icon Size */
+div i.iconSize{
+	font-size: 30px;
+}
+
+/*List Item div color*/
+div.firstDiv{
+	background-image:linear-gradient(to right,#039be5 33.33%,#ffc107 33.33%);
+}
+
+/*Electricity icon color chnage*/
+div p a i.electricityIcon{
+	color: #1976d2;
+	-webkit-animation: colorchange 20s infinite alternate;
+	-moz-animation: colorchange 20s infinite alternate;
+}
+@-webkit-keyframes colorchange{
+	20%{
+		color: red;
+	}
+
+	80%{
+		color: orange;
+	}
+}
+
+strong.hover:hover{
+	color: red;
+}
+
+i.developerIcon{
+	font-size: 24px;
+}
+
+.offer{
+margin: 0px;
+padding: 0px;
+}
+
+.offer1{
+
+  background-color: #ffc107;
+height: 400px;
+width: 33.33%;
+float: left;
+}
+.offer2{
+
+  background-color:white;
+height: 400px;
+width: 33.33%;
+float: left;
+text-align: center;
+
+}
+
+.offer2 h2{
+	color: #12a059;
+}
+.offer3{
+
+  background-color: #039be5;
+height: 400px;
+width: 33.33%;
+float: left;
+}
+
+.offer1 img{
+  height: 300px;
+  width: 300px;
+  margin: 50px 20px 20px 100px;
+}
+.offer3 img{
+  height: 300px;
+  width: 300px;
+  margin: 50px 20px 20px 100px;
+}
+
+
+.open{
+	padding-left: 10px;
+  background-color: #e9dee7;
+width: 100%;
+float: left;
+}
+.open h3 , h5 {
+      color: #112388;
+
+}
+.service1 {
+	margin-right: 150px;
+}
+
+
+.footer{
+	background-color: black;
+	color: white;
+	height: 1100px;
+	text-align: center;
+	padding-top: 920px;
+}
+
+
+
+
+

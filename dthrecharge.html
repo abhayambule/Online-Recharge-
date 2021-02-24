@@ -1,0 +1,186 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Font Awesome Icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!--Animated Css Cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!--Custom Css File Created By Owner-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style type="text/css">
+    @media only screen and (max-width: 600px) {
+      h6.size1 {
+        font-size: 13px; //dfhfhhf
+      }
+    }
+
+    h5.promocodeText {
+      font-family: arial;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript></noscript>
+  <!--Start of Header-->
+  <header>
+    <nav class="cyan darken-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="index.html" class="col xl6 l6 m6 s6 "><i class="material-icons">arrow_back</i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--End of Header-->
+
+
+  <!--Start of Main-->
+  <main>
+    <!--Start of Materialize Scrollpy Section-->
+    <div class="whole">
+      <div class="card-panel indigo lighten-5">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m9 l10">
+              <div id="recharge" class="section scrollspy">
+                <!--Start of Mobile Recharge Div-->
+                <div class="row">
+                  <!-- form main row-->
+                  <form class="col xl12 l12 m12 s12">
+
+                    <!--First row-->
+                    <div class="row">
+                      <!--Mobile Number Input box-->
+                      <div class="input-field col xl6 l6 m12 s12">
+                        <input id="mobileNo" type="tel" class="validate">
+                        <label for="mobileNo">Subscriber ID/Registered Mobile</label>
+                      </div>
+                      <!--Operator Choose box-->
+                      <div class="input-field col xl6 l6 m12 s12">
+                        <select class="icons">
+                          <option value="" disabled selected>Operator</option>
+                          <option value="" data-icon="" class="left">Tata Sky</option>
+                          <option value="" data-icon="" class="left">Dish TV</option>
+                          <option value="" data-icon="" class="left">D2H</option>
+                          <option value="" data-icon="" class="left">Airtel Digital TV</option>
+                          <option value="" data-icon="" class="left">Sun Direct</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <!--Ammount Input box-->
+                    <div class="input-field col xl6 l6 m6 s12">
+                      <input id="ammount" type="number" class="validate">
+                      <label for="ammount">₹ Ammount</label>
+                    </div>
+
+                    <div class="input-field col xl3 l3 m6 s12">
+                      <input id="promoCode" type="text" class="validate">
+                      <label for="promoCode">Promo Code</label>
+                    </div>
+
+                </div>
+                <!--Third row-->
+                <div class="row">
+                  <div class="input-field col xl12 l12 m12 s12">
+
+                    <!--Check box-->
+                    <div class="col xl2 l2 m12 s12">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Allow</span>
+                        </label>
+                      </p>
+                    </div>
+
+                    <!--Button-->
+                    <div class="col xl10 l10 m12 s12">
+                      <a href="index.php" class="btn red col xl12 l12 m12 s12"><strong>Recharge</strong></a>
+                    </div>
+
+                  </div>
+                  <!--End of input-field col xl12-->
+                </div>
+                <!--end of row-->
+
+                </form>
+              </div>
+              <!--End of form main row-->
+              <!--End of Mobile Recharge Div-->
+            </div>
+            <!--End of section scrollspy Div | ID="recharge" -->
+
+
+
+          </div>
+          <!--End of col s12 m9 l10 Div-->
+        </div>
+        <!--End of Row-->
+      </div>
+      <!--End of conatiner-->
+    </div>
+    <!--card-panel indigo lighten-5-->
+    </div>
+    <!--End of Whole-->
+    <!--Start of Materialize Scrollpy Section-->
+  </main>
+
+
+
+
+  <!--End of Header-->
+
+
+  <!-- Jquery Link-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('select').formSelect(); /* For choose operator and state*/
+      $('.collapsible').collapsible({  /*promocode Collapsable Click*/
+        inDuration: 350   /* For Promocode Collapsable Duration | smooth click */
+      }); /* For promocode */
+    });
+    /*For promocode Copy*/
+    function copy(that) {
+      var inp = document.createElement('input');
+      document.body.appendChild(inp)
+      inp.value = that.textContent
+      inp.select();
+      document.execCommand('copy', false);
+      inp.remove();
+    }
+
+
+    // For Mobile Recharge Page Scrollpy | It is Jquery
+    $('.scrollspy').scrollSpy();
+
+
+  </script>
+  </script>
+
+
+
+</body>
+
+</html>
